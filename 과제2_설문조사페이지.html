@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="설문조사 양식"> <title>서비스 만족도 조사</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="https://www.google.com">공식 홈페이지 가기</a>
+        </nav>
+        <h1>맛집 예약 서비스 설문조사</h1>
+    </header>
+
+    <main>
+        <form>
+            <h3>1. 인적 사항</h3>
+            <ul>
+                <li>이름: <input type="text" name="name"></li> </ul>
+
+            <h3>2. 만족도 평가</h3>
+            <table border="1">
+                <tr> <th>항목</th> <th>만족</th>
+                    <th>불만족</th>
+                </tr>
+                <tr>
+                    <td>예약 시스템 편리성</td> <td><input type="radio" name="check"></td>
+                    <td><input type="radio" name="check"></td>
+                </tr>
+            </table>
+
+            <h3>3. 추가 의견</h3>
+            <p>자주 쓰는 기능: 
+                <select name="service">
+                    <option>식당 예약</option>
+                    <option>리뷰 확인</option>
+                </select>
+            </p>
+
+            <p>상세 의견:</p>
+            <textarea rows="4" cols="40"></textarea>
+            <br>
+
+            <input type="submit" value="제출하기">
+        </form>
+    </main>
+
+</body>
+</html>
