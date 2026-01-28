@@ -1,0 +1,43 @@
+/* 1. 기본 선택자 (전체) */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. 배경 다루기 및 색상 지정 */
+body {
+    background-color: #eeeeee;
+    color: #333333;
+}
+
+/* 3. 기본 선택자 (ID) */
+#main-header {
+    text-align: center;
+    padding: 20px;
+}
+
+/* 4. 박스모델, 테두리, 여백 다루기 */
+.box-content {
+    background-color: white;
+    border: 1px solid gray;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* 5. 기본 선택자 (Class) 및 다양한 색상 */
+.highlight {
+    color: blue;
+}
+
+/* 6. 텍스트 꾸미기 (폰트) */
+h2 {
+    font-family: "Malgun Gothic", sans-serif;
+    font-size: 24px;
+    color: darkblue;
+}
+
+/* 7. 텍스트 꾸미기 */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}

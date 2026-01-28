@@ -1,0 +1,73 @@
+/* 1. 요소의 유형 [display] */
+header {
+    display: block;
+    background-color: #f0f0f0;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 10px;
+}
+
+/* 2. 문서의 흐름 [float] */
+h1 {
+    float: none;
+    text-align: center;
+}
+
+/* 3. 위치 지정하기 [position] */
+#chat-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 2px solid #ccc;
+    background-color: white;
+}
+
+/* 4. 겹치거나 넘치는 요소 다루기 [overflow] */
+#chat-content {
+    height: 500px;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+/* 5. 선택자 더 알아보기 [ > , ^ ] */
+ul > li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+input[name^="user"] {
+    border: 1px solid #777;
+}
+
+/* 테이블 기본 스타일 (테두리 합치기) */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+/* 6. 의사요소와 의사클래스 [nth-child, :hover, ::before] */
+
+/* 테이블의 첫 번째 줄(제목)만 회색 지정 */
+tr:nth-child(1) {
+    background-color: #eeeeee;
+}
+
+/* 제출하기 버튼 마우스 호버 */
+input[type="submit"]:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+/* 제목 앞에 Q 표시 추가 */
+h3::before {
+    content: "Q. ";
+    color: blue;
+}
