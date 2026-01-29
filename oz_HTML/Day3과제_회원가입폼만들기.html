@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 양식</title>
+</head>
+<body>
+    
+    <div id="container">
+        <!-- 회원가입 제출할 폼 -->
+        <form id="form" action="나중에 폼 전달할 서버주소">
+            <table class="table">
+                <!-- 열 제목, 열 데이터 -->
+                <tr>
+                <th>아이디</th>
+                <td>
+                    <input name="id" placeholder="아이디">
+                </td>
+                </tr>
+                <tr>
+                <th>비밀번호</th>
+                <td>
+                    <input type="password" name="pw1" placeholder="비밀번호">
+                </td>
+                </tr>
+                <!-- 비밀번호 확인 -->
+                <tr>
+                <th>비밀번호 확인</th>
+                <td>
+                    <input type="password" name="pw2" placeholder="비밀번호">
+                </td>
+                </tr>
+                 <!-- 사용자 이름 -->
+                <tr>
+                <th>이름</th>
+                <td>
+                    <input name="name" placeholder="사용자 이름">
+                </td>
+                </tr>
+                <!-- 전화번호 -->
+                <tr>
+                <th>전화번호</th>
+                <td>
+                    <input name="phone" placeholder="휴대전화 번호">
+                </td>
+                </tr>
+                <!-- 원하는 직무 -->
+                <tr>
+                <th>원하는 직무</th>
+                <td>
+                    <select name="position" >
+                        <option value="developer">개발자</option>
+                        <option value="designer">웹디자이너</option>
+                        <option value="manager">기획자</option>
+                        <option value="undetermined">미정</option>
+                    </select>
+                </td>
+                </tr>
+                <!-- 성별 -->
+                <tr>
+                <th>성별</th>
+                <td>
+                    <label>
+                        <input type="radio" name="gender" value="male" checked>남자
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female" checked>여자
+                    </label>
+                </td>
+                </tr>
+                <!-- 이메일 -->
+                <tr>
+                <th>이메일</th>
+                <td>
+                    <input title="정확한 메일 주소를 작성해주세요" type="email" name="email">
+                </td>
+                </tr>
+                 <!-- 자기소개 -->
+                <tr>
+                <th>자기소개</th>
+                <td>
+                    <textarea name="intro"></textarea>
+                </td>
+                </tr>
+
+            </table>
+            <div class="buttons">
+                <input type="submit" value="가입" class="btn" title="가입">
+                <input type="reset" value="리셋" class="btn" title="처음으로">
+            </div>
+        </form>
+    </div>
+
+<script src="Day3과제_회원가입폼.js"></script> 
+<!-- js 연결해주기 -->
+
+</body>
+</html>
